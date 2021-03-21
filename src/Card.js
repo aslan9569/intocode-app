@@ -4,6 +4,8 @@ import {useState} from "react";
 import Content from "./Content";
 
 function Card(props) {
+
+
     return (
         <div className="card">
             <div className="card-image">
@@ -11,6 +13,7 @@ function Card(props) {
             </div>
             <div className="card-info">
                 <div className="card-name">{props.product.name}</div>
+                <div className="card-rating"> {props.product.rating} </div>
                 <div className="card-price">{props.product.price}</div>
             </div>
             <Button
